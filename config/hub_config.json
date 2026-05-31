@@ -1,0 +1,56 @@
+{
+  "cooperative_name": "FarmTrace Cooperative",
+  "cooperative_id": "COOP-ZW-001",
+  "country": "ZW",
+  "hub_gps": {
+    "simulate": true,
+    "lat": -17.8292,
+    "lon": 31.0522
+  },
+  "sensors": {
+    "dht22_pin": 17,
+    "soil_adc_channel": 0,
+    "poll_interval_seconds": 10
+  },
+  "camera": {
+    "enabled": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "photo_dir": "data/photos"
+  },
+  "scale": {
+    "dout_pin": 5,
+    "sck_pin": 6,
+    "calibration_factor": 420.0,
+    "tare_on_startup": true
+  },
+  "leds": {
+    "status_pin": 18,
+    "ready_pin": 23,
+    "error_pin": 24
+  },
+  "batch": {
+    "target_weight_kg": 100.0,
+    "auto_lock": true
+  },
+  "google": {
+    "enabled": false,
+    "sheet_id": "YOUR_SHEET_ID",
+    "credentials_file": "config/service_account.json",
+    "drive_folder_id": "YOUR_FOLDER_ID",
+    "buyer_email": "buyer@example.com"
+  },
+  "gsm": {
+    "enabled": false,
+    "port": "/dev/ttyUSB0",
+    "baud": 115200,
+    "apn": "internet"
+  },
+  "sync": {
+    "interval_seconds": 300,
+    "max_retries": 5
+  },
+  "simulate_sensors": true
+}
