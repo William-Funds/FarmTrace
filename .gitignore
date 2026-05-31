@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# FarmTrace specific
+config/service_account.json
+data/farmtrace.db
+data/farmtrace.db-shm
+data/farmtrace.db-wal
+data/passports/
+data/photos/
+logs/
