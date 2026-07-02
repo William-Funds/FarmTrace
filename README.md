@@ -20,6 +20,16 @@ FarmTrace is a farm-to-market traceability system built on Raspberry Pi 5 that g
 
 ---
 
+## 🚀 Quick Install
+
+Install the Python dependencies for the full project in one step:
+
+```bash
+pip install -r requirements.txt
+```
+
+> This covers the Flask API, PDF/QR generation, chatbot providers, and Raspberry Pi hardware support. The OS-level packages listed later in the setup section are still needed on Raspberry Pi for GPIO access.
+
 ## 🎯 The Problem & Our Solution
 
 ### ❌ **BEFORE FarmTrace**
@@ -231,8 +241,9 @@ source .venv/bin/activate
 #### **4. Install Dependencies**
 ```bash
 pip install -r requirements.txt
-pip install adafruit-circuitpython-dht adafruit-blinka rpi-lgpio
 ```
+
+This installs the main Python packages for the Flask API, PDF/QR generation, chatbot providers, and Raspberry Pi hardware support. On a Raspberry Pi, the system packages from step 1 are still required for GPIO access.
 
 #### **5. Configure Your Settings**
 Edit `config/hub_config.json`:

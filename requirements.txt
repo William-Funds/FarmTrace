@@ -1,0 +1,21 @@
+# FarmTrace Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Core app and API dependencies
+requests>=2.31.0
+Flask>=3.0.0
+
+# PDF and QR generation
+reportlab>=4.2.0
+qrcode>=8.0.0
+Pillow>=10.0.0
+
+# Optional LLM providers for the chatbot
+openai>=1.0.0
+google-generativeai>=0.8.0
+
+# Raspberry Pi / hardware support
+RPi.GPIO>=0.7.0
+rpi-lgpio>=0.6.0
+adafruit-blinka>=8.0.0
+adafruit-circuitpython-dht>=4.0.0

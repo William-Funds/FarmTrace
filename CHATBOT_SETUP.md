@@ -10,7 +10,21 @@ The FarmTrace chatbot provides AI-powered crop recommendations to farmers based 
 
 ## 🚀 Quick Start
 
+Install the full Python dependency set for the repository in one step:
+
+```bash
+pip install -r requirements.txt
+```
+
 ### 1. Install Dependencies
+
+Install the repository's Python dependencies in one step:
+
+```bash
+pip install -r requirements.txt
+```
+
+The file includes the Flask API dependencies plus the optional OpenAI and Google Gemini packages. If you prefer to install only the chatbot stack manually, the equivalent packages are:
 
 ```bash
 pip install openai flask requests
