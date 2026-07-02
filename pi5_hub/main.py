@@ -29,6 +29,7 @@ from pi5_hub.led_controller import LEDController
 from pi5_hub.camera_manager import CameraManager
 from pi5_hub.batch_manager  import BatchManager
 from pi5_hub.gsm_manager    import GSMManager
+from pi5_hub.chatbot_api    import ChatbotAPI
 from cloud_sync.google_sync import GoogleSync
 from ui.app                 import FarmTraceApp
 
@@ -43,18 +44,20 @@ def main():
     batches = BatchManager(CONFIG)
     gsm     = GSMManager(CONFIG)
     gsync   = GoogleSync(CONFIG)
+    chatbot = ChatbotAPI(CONFIG, sensors=sensors)
 
     sensors.start()
     scale.start()
     leds.startup_sequence()
     leds.start_heartbeat()
     gsync.start()
+    chatbot.start()
 
     log.info("All background services started")
 
     def _shutdown(sig, frame):
         log.info("Shutting down...")
-        sensors.stop(); leds.stop(); gsync.stop()
+        sensors.stop(); leds.stop(); gsync.stop(); chatbot.stop()
         sys.exit(0)
 
     signal.signal(signal.SIGINT,  _shutdown)

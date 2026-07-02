@@ -48,6 +48,18 @@
     "baud": 115200,
     "apn": "internet"
   },
+  "llm": {
+    "provider": "openai",
+    "api_key": "YOUR_OPENAI_API_KEY",
+    "model": "gpt-4-turbo",
+    "max_tokens": 500,
+    "temperature": 0.7
+  },
+  "chatbot": {
+    "enabled": true,
+    "api_host": "0.0.0.0",
+    "api_port": 5001
+  },
   "sync": {
     "interval_seconds": 300,
     "max_retries": 5
