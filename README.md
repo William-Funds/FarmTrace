@@ -64,7 +64,7 @@ FarmTrace includes an **AI-powered chatbot** that provides location-specific cro
 
 | Feature | Details |
 |:---|:---|
-| 🧠 **LLM Integration** | OpenAI (GPT-4) or Google Gemini |
+| 🧠 **LLM Integration** | OpenAI (GPT-4) |
 | 🗺️ **Location-Aware** | Zimbabwe-focused agricultural context |
 | 📅 **Season Detection** | Auto-detects current season for optimal crops |
 | 📊 **Sensor Data** | Live temperature, humidity, soil moisture |
@@ -101,8 +101,8 @@ HX711 Scale       ──────►     Touchscreen UI        ────�
 Pi AI Camera      ──────►     SQLite Database                QR Verification
 LED Indicators    ◄──────     Passport Generator
                               Location Lookup      ┌──────────────────────┐
-                              Email Sender    ─────┤  LLM API (OpenAI/    │
-                              Chatbot API    ─────►│  Google Gemini)      │
+                              Email Sender    ─────┤  LLM API (OpenAI)    │
+                              Chatbot API    ─────►│  ..............      │
                                                     └──────────────────────┘
                               (API on port 5001)
 ```
@@ -396,12 +396,10 @@ curl -X POST http://localhost:5001/recommendations \
 
 | 🤝 Name | 👔 Role | 🌍 Focus |
 |:---|:---|:---|
-| **William Fundirwa** | Co-Founder & Team Leader | Vision & Strategy |
-| **Emmanuel Chidhobwe** | Co-Founder & Tech Lead | Architecture & Development |
-| **MacDonald Zivanai** | Co-Founder & Business Lead | Market & Partnerships |
-| **Beloved Mapise** | Co-Founder & Communications Lead | Outreach & Impact |
-
-🌐 **Based in**: Zimbabwe | 🚀 **Impact**: Serving 500+ smallholder farmers
+| **William Fundirwa** |
+| **Emmanuel Chidhobwe** |
+| **MacDonald Zivanai** |
+| **Beloved Mapise** |
 
 ---
 
